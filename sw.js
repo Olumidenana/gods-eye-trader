@@ -1,5 +1,5 @@
 // Service worker: network-first with cache-busting on navigation + auto-cleanup.
-const CACHE = 'ictflux-gdeye-v36-live';
+const CACHE = 'ictflux-gdeye-v37-nogate';
 
 self.addEventListener('install', e => {
   e.waitUntil(
