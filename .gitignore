@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+journal.sqlite
+STOP
+reports/
+data/
+.venv/
+.env
+journal*.sqlite
+*.egg-info/
+reports/*.html
+dashboard_*.html
+demo_report.html
+research/ict-videos/.*cache.json
+research/ict-videos/*.vtt
+scratch/
+.cache/

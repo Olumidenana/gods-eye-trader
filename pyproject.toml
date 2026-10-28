@@ -1,0 +1,21 @@
+[project]
+name = "ict-trader"
+version = "0.1.0"
+description = "ICT Time-and-Price trading system: killzone liquidity sweeps, news filter, hard risk limits, MT4/MT5 execution"
+requires-python = ">=3.11"
+dependencies = ["tzdata"]
+
+[project.optional-dependencies]
+# Live trading only; the MetaTrader5 package is Windows-only.
+mt5 = ["MetaTrader5>=5.0.45"]
+
+[project.scripts]
+ict-trader = "ict_trader.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ict_trader", "ict_trader.broker", "ict_trader.edge", "flux_engine"]
+
